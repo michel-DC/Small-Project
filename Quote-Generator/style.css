@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+#container {
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4a148c;
+    margin-bottom: 1.5rem;
+}
+
+#type-selector {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#type-selector:focus {
+    border-color: #4a148c;
+}
+
+#generate-button {
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#generate-button:hover {
+    background-color: #6a1b9a;
+}
+
+#citation-container {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.quote-author {
+    font-size: 1rem;
+    color: #666;
+}
+
+.error {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.clear-button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #6a1b9a;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #generate-button,
+    .clear-button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #type-selector {
+        width: 100%;
+        padding: 12px;
+    }
+}

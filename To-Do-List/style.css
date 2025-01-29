@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#todo-input {
+    width: 75%;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 1.2em;
+    margin-right: 10px;
+    box-sizing: border-box;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#add-button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+#add-button:active {
+    background-color: #003f7f;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    margin-top: 15px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+    color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#todo-list li span {
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#todo-list button {
+    background-color: transparent;
+    border: none;
+    color: #e63946;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: color 0.3s;
+}
+
+#todo-list button:hover {
+    color: #c70039;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#overlay .task-detail {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    overflow-wrap: break-word;
+    font-size: 1.4em;
+}
+
+#overlay .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 12px;
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    transition: background-color 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#overlay .close-btn:hover {
+    background-color: #b71c1c;
+}
+
+.clear-button {
+    display: block;
+    width: 100%;
+    padding: 15px 25px;
+    margin-top: 30px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #c70039;
+    transform: translateY(-3px);
+}
+
+.clear-button:active {
+    background-color: #b71c1c;
+}

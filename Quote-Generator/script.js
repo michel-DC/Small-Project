@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Vérifiez que le script est exécuté une seule fois
     if (window.scriptAlreadyLoaded) return;
     window.scriptAlreadyLoaded = true;
 
-    // Sélectionner les éléments de la page
     const citationContainer = document.getElementById('citation-container');
     const typeSelector = document.getElementById('type-selector');
     const generateButton = document.getElementById('generate-button');

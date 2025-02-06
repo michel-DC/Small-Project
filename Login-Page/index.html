@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Identifiez-vous</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/icon-top.png" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Créer un compte</h1>
+          <div class="social-icons">
+            <a href="https://www.google.com" class="icon" target="_blank">
+              <img
+                src="assets/google.png"
+                alt="Google"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+            <a href="https://www.facebook.com" class="icon" target="_blank">
+              <img
+                src="assets/facebook.png"
+                alt="Facebook"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+            <a href="https://www.microsoft.com" class="icon" target="_blank">
+              <img
+                src="assets/microsoft.png"
+                alt="Microsoft"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+            <a href="https://www.apple.com" class="icon" target="_blank">
+              <img
+                src="assets/apple.png"
+                alt="Apple"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+          </div>
+          <span>ou utiliser un email pour vous identifier</span>
+          <input type="text" placeholder="Nom" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Mot de passe" />
+          <button>Créer un compte</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Se Connecter</h1>
+          <div class="social-icons">
+            <a href="https://www.google.com" class="icon" target="_blank">
+              <img
+                src="assets/google.png"
+                alt="Google"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+            <a href="https://www.facebook.com" class="icon" target="_blank">
+              <img
+                src="assets/facebook.png"
+                alt="Facebook"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+            <a href="https://www.microsoft.com" class="icon" target="_blank">
+              <img
+                src="assets/microsoft.png"
+                alt="Microsoft"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+            <a href="https://www.apple.com" class="icon" target="_blank">
+              <img
+                src="assets/apple.png"
+                alt="Apple"
+                style="width: 30px; height: 30px"
+              />
+            </a>
+          </div>
+          <span>Ou utiliser votre email et votre mot de passe</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Mot de passe" />
+          <a href="Forgot-Password/ForgotPassword.html">Mot de passe oublié?</a>
+          <button>Se connecter</button>
+        </form>
+      </div>
+
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Bienvenue</h1>
+            <p>
+              Entrez vos informations personelles pour utiliser pleinement le
+              site
+            </p>
+            <button class="hidden" id="login">S'identifier</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Bonjour!</h1>
+            <p>
+              Entrez vos informations personelles pour utiliser pleinement le
+              site
+            </p>
+            <button class="hidden" id="register">Créer un compte</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
